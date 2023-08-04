@@ -34,23 +34,32 @@
         background-color: #0056b3;
     }
     
-    /* Estilo para el título */
-    h1 {
-        color: #007bff;
-        font-size: 28px;
-        margin-top: 30px;
-        text-align: center;
-    }
-    
-    /* Estilo para el párrafo */
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-        max-width: 600px;
-        margin: auto;
-        margin-top: 20px;
-        text-align: center;
-    }
+    .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        h1 {
+            text-align: center;
+            color: #008080;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 70%;
+            border-radius: 50%;
+            height: auto;
+            display: block; 
+            margin: 0 auto;
+        }
     
     </style>
 </head>
@@ -61,17 +70,27 @@
             <a href="sobre.html" class="nav-item nav-link"><i class="bi bi-map-fill me-2"></i>Perfil</a>
         </div>
     </div>
-    <h1 class="text-center">SISTEMAS DE INFORMACIÓN</h1>
-    <p class="text-center">Escogí esta carrera porque me apasiona el desarrollo de aplicaciones y 
-        sistemas de información desde que era niño.</p>
-    <p>Pienso que la carrera que eligi es la correcta ya que me apaciona mucho el mundo tecnologico mas el desarrollo
-        de las aplicaciones moviles. Unos de mis sueños es poder crear una aplicacion movil de video juegos tanto educativa u otros juegos
-        muy difirentes a lo que existe en la actualidad.
-    </p>
-    <p>
-        Ademas que la carrera que escogi esta en constante evolución dia a dia. Hoy en dia es muy requirido los profesionales 
-        informaticos ya que estamos en la era tecnologico y en constante evolución.
-    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <h1>SISTEMAS DE INFORMACIÓN</h1>
+            <p>
+                Escogí esta carrera porque me apasiona el desarrollo de 
+                aplicaciones y sistemas de información desde que era niño.
+            </p>
+            <p>
+                Pienso que la carrera que elegí es la correcta ya que me apasiona mucho el mundo tecnológico y el desarrollo 
+                de aplicaciones móviles. Uno de mis sueños es poder crear una aplicación móvil de videojuegos, 
+                tanto educativa como otros juegos muy diferentes a lo que existe en la actualidad.
+            </p>
+            <p>
+                Además, la carrera que escogí está en constante evolución día a día. Hoy en día, 
+                es muy requerido el talento de profesionales informáticos, ya que estamos en la era 
+                tecnológica y en constante evolución.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://agendaeducativa.org/wp-content/uploads/2021/07/Sistemas-informacion-802x560.jpg" alt="Sistemas de Información">
+        </div>
+    </div>
     
 </body>
 </html>
